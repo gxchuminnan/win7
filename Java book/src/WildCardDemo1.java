@@ -1,3 +1,6 @@
+
+//通配类型第一个例子
+
 public class WildCardDemo1 {
   public static void main(String[] args ) {
      GenericStack<Integer> intStack = new GenericStack<Integer>();
