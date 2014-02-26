@@ -21,21 +21,68 @@ public class CWMouseHook {
 		Robot r = new Robot();
 		for (int ii = 0; ii <200; ii++) {
 			URL u1 = new URL(
-					"http://item.taobao.com/item.htm?spm=a1z10.5.w4023-4583693266.7.c0ZFIk&id=23171704307");
-
+					"http://weibo.com/2760968687/myfollow?t=1&page=2");
 			openWebpage(u1.toURI());
+           for(int jj=0;jj<1;jj++){
 			Thread.sleep(5000);
-			r.mouseMove(300, 600);
+			r.mouseMove(600, 350);
 			r.mousePress(InputEvent.BUTTON1_MASK);
 			r.mouseRelease(InputEvent.BUTTON1_MASK);
-			Thread.sleep(5000);
+			Thread.sleep(1000);
+			r.mouseMove(840, 350);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(1000);
+			r.mouseMove(1100, 350);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(2000);
+			r.mouseMove(600, 570);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(1000);
+			r.mouseMove(840, 570);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(1000);
+			r.mouseMove(1100, 570);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(2000);
+			r.mouseMove(600, 700);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(1000);
+			r.mouseMove(840, 700);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(1000);
+			r.mouseMove(1100, 700);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			
+			
+			//以上是选择sina 关注人员的
+			Thread.sleep(1000);
+			r.mouseMove(770, 270);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			Thread.sleep(2000);
+			//取消关注 
+	
+			r.mouseMove(735, 450);
+			r.mousePress(InputEvent.BUTTON1_MASK);
+			r.mouseRelease(InputEvent.BUTTON1_MASK);
+			//确定
+			Thread.sleep(2000);
+             }   
 			Runtime.getRuntime().exec(
-			            "taskkill /F /FI \"IMAGENAME eq SogouExplorer.exe*\"");
-	         Thread.sleep(20000);
+			            "taskkill /F /FI \"IMAGENAME eq chrome.exe*\"");
+	         Thread.sleep(2000);
 		}
-			for (int jj = 0; jj <200; jj++) {
+			/*for (int jj = 0; jj <200; jj++) {
 				URL u2 = new URL(
-						"http://item.taobao.com/item.htm?spm=a1z10.3.w4023-4015812877.4.CDhKwS&id=36294960469");
+						"http://weibo.com/2760968687/myfollow?rightmod=1&wvr=5");
 
 				
 				openWebpage(u2.toURI());
@@ -46,8 +93,8 @@ public class CWMouseHook {
 				r.mouseRelease(InputEvent.BUTTON1_MASK);
 				Thread.sleep(5000);
 				Runtime.getRuntime().exec(
-						"taskkill /F /FI \"IMAGENAME eq SogouExplorer.exe*\"");
-				Thread.sleep(2000);
+						"taskkill /F /FI \"IMAGENAME eq SogouExplorer.exe*\"");*/
+				
 			/*BufferedImage i = r.createScreenCapture(new Rectangle(104, 89, 75,25));
 			ImageIO.write(i, "jpg", new File("D:\\bea\\" + "CreateImg"+ ".jpg"));
 			r.mouseMove(160, 82);
@@ -95,7 +142,7 @@ public class CWMouseHook {
 			}
 */
 		
-			}
+			//}
 		}
 		
 
