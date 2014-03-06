@@ -1,6 +1,7 @@
 package book2;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class TestHashSet {
@@ -18,6 +19,15 @@ public class TestHashSet {
 		   
 		   System.out.println(o);
 	   }
+	   
+	   Iterator<String> iterator1 =set1.iterator();
+	   while(iterator1.hasNext()){
+		   System.out.print(iterator1.next()+" ");
+	   }
+	   
+	   
+	   
+	   
 	   
    }
  }
